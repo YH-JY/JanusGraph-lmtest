@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-layout-header {
+  background: #001529 !important;
+  padding: 0 24px;
+}
+
+.ant-layout-sider {
+  background: #fff;
+}
+
+.ant-layout-content {
+  background: #fff;
+  margin: 0;
+  min-height: 280px;
+}
+
+.graph-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.stats-card {
+  text-align: center;
+  padding: 16px;
+}
+
+.stats-card .ant-statistic-content {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.risk-high {
+  color: #ff4d4f;
+}
+
+.risk-medium {
+  color: #faad14;
+}
+
+.risk-low {
+  color: #52c41a;
+}
+
+.node-label {
+  font-size: 12px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 2px;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke-width: 3px;
+}
+
+.node.namespace {
+  fill: #1890ff;
+}
+
+.node.pod {
+  fill: #52c41a;
+}
+
+.node.service {
+  fill: #faad14;
+}
+
+.node.deployment {
+  fill: #722ed1;
+}
+
+.node.cluster_role {
+  fill: #ff4d4f;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.ant-card-head-title {
+  font-weight: 600;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ant-steps-item-title {
+  font-size: 14px;
+}
+
+.timeline-item-content {
+  padding-left: 8px;
+}
+
+.attack-path-highlight {
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 8px 0;
+}

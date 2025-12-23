@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ant-layout-header {
+  background: #001529 !important;
+}
+
+.graph-container {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.stats-card {
+  text-align: center;
+}
+
+.stats-card .ant-statistic-content {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.risk-high {
+  color: #ff4d4f;
+}
+
+.risk-medium {
+  color: #faad14;
+}
+
+.risk-low {
+  color: #52c41a;
+}
+
+.node-label {
+  font-size: 12px;
+  text-anchor: middle;
+  pointer-events: none;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: 0.6;
+  stroke-width: 2px;
+}
+
+.node {
+  stroke: #fff;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke-width: 3px;
+}
+
+.node.namespace {
+  fill: #1890ff;
+}
+
+.node.pod {
+  fill: #52c41a;
+}
+
+.node.service {
+  fill: #faad14;
+}
+
+.node.deployment {
+  fill: #722ed1;
+}
+
+.node.cluster_role {
+  fill: #ff4d4f;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
